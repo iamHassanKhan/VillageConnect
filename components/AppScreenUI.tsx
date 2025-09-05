@@ -61,7 +61,7 @@ const styles = StyleSheet.create({
   },
   padding: {
     marginTop:Platform.OS === 'android' ? StatusBar.currentHeight : 0,
-    padding: 3,
+    padding: 0,
     
   },
 });

@@ -1,6 +1,6 @@
 import React from "react";
 import { StyleSheet, TextInput, TextInputProps, View } from "react-native";
-import { COLORS, FONT_SIZES, FONTS, SPACING } from "../constants/theme";
+import { COLORS, FONT_SIZES, FONTS, SPACING } from "../theme/theme";
 
 interface AppInputProps extends TextInputProps {
   variant?: "default" | "outlined";
@@ -22,6 +22,7 @@ const AppInput: React.FC<AppInputProps> = ({ variant = "default", style, ...prop
         style={styles.input}
         placeholderTextColor={COLORS.gray}
         {...props}
+        
       />
     </View>
   );

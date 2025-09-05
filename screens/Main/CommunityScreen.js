@@ -1,15 +1,22 @@
 import React from "react";
-import { View, Text, StyleSheet } from "react-native";
+import { StyleSheet, View, Text } from "react-native";
+import AppScreenUI from "../../components/AppScreenUI";
 
-export default function CommunityScreen() {
+import AppHeader from "../../components/AppHeader";
+
+export default function CommunityScreen({ navigation }) {
   return (
-    <View style={styles.container}>
-      <Text style={styles.text}>Community Screen</Text>
-    </View>
+    <AppScreenUI>
+      <AppHeader
+        iconLeft="exit-outline"
+        iconLeftSIze={25}
+        onPress={() => {
+          navigation.navigate("Login");
+        }}
+        title="Community"
+      />
+    </AppScreenUI>
   );
 }
 
-const styles = StyleSheet.create({
-  container: { flex: 1, alignItems: "center", justifyContent: "center" },
-  text: { fontSize: 20, fontWeight: "bold" },
-});
+const styles = StyleSheet.create({});

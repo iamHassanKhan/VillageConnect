@@ -6,7 +6,7 @@ import {
     TouchableOpacity,
     View,
 } from "react-native";
-import { useTheme } from "../context/ThemeContext";
+import { useTheme } from "../theme/ThemeContext";
 
 interface AppModalProps {
   visible: boolean;

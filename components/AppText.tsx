@@ -1,7 +1,7 @@
 import React from "react";
 import { Text, TextProps } from "react-native";
-import { FONTS, FONT_SIZES } from "../constants/theme";
-import { useTheme } from "../context/ThemeContext";
+import { FONTS, FONT_SIZES } from "../theme/theme";
+import { useTheme } from "../theme/ThemeContext";
 
 interface AppTextProps extends TextProps {
   variant?: "h1" | "h2" | "h3" | "body" | "small";

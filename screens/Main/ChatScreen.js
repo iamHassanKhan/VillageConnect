@@ -1,11 +1,14 @@
 import React from "react";
 import { View, Text, StyleSheet } from "react-native";
+import AppScreenUI from "../../components/AppScreenUI";
 
 export default function ChatScreen() {
   return (
-    <View style={styles.container}>
-      <Text style={styles.text}>Chat Screen</Text>
-    </View>
+    <AppScreenUI>
+      <View style={styles.container}>
+        <Text style={styles.text}>Chat Screen</Text>
+      </View>
+    </AppScreenUI>
   );
 }
 

@@ -1,7 +1,7 @@
 import { useField } from "formik";
 import React from "react";
 import { Text, View } from "react-native";
-import { COLORS } from "../constants/theme";
+import { COLORS } from "../theme/theme";
 import AppInput from "./AppInput";
 
 interface AppInputFieldProps {

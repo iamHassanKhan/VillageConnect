@@ -1,6 +1,6 @@
 import React from "react";
 import { View, ViewStyle } from "react-native";
-import { COLORS, SPACING } from "../constants/theme";
+import { COLORS, SPACING } from "../theme/theme";
 
 interface AppDividerProps {
   vertical?: boolean; // Divider orientation
