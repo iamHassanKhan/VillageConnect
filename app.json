@@ -16,18 +16,31 @@
       "supportsTablet": true
     },
     "android": {
+      "package": "com.ihassanblouch.villageconnect",
+      "googleServicesFile": "./google-services.json",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "permissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.MODIFY_AUDIO_SETTINGS"
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
     "plugins": [
       "expo-font",
-      "expo-web-browser"
-    ]
+      "expo-web-browser",
+      "expo-video",
+      "expo-audio"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "44807a29-bb2f-48e8-8bae-1bb62fdb0879"
+      }
+    }
   }
 }
